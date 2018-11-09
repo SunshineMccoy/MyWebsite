@@ -3,6 +3,10 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Michael McCoy's Web Development Site">
+	<meta name="keywords" content="HTML,CSS,JavaScript,blog,development">
+	<meta name="author" content="Michael McCoy">
 
 	<title>My First Website</title>
 </head>
@@ -10,70 +14,68 @@
 
 	body {
 		font-family: "Courier New", Courier;
-		background-color: #C0C0C0;
+		background-color: black;
+		color: lime;
 		font-size: 62.5%;
-
 	}
+
 	/* I wanted to have the links look just like normal text */
 	a, a:link, a:visited, a:hover, a:active {
-	color: black;
+	color: lime;
 	text-decoration: none;
 	}
 	h1 {
 		text-align: center;
-		font-size: 2rem;
-		font-weight: normal;
-	}
-	h2 {
-		text-align: center;
-		font-size: 1.6rem;
+		font-size: 2.8rem;
 		font-weight: normal;
 	}
 	h3 {
 		text-align: center;
-		font-size: 1.6rem;
+		font-size: 2.2rem;
+		font-weight: normal;
+	}
+	h2 {
+		text-align: center;
+		font-size: 2.2rem;
 		font-weight: normal;
 	}
 	p {
 		text-align: center;
-		font-size: 1rem;
+		font-size: 1.6rem;
+		margin-bottom: 3rem;
 	}
 	#main {
 		position: relative;
 	}
 	#dropdownMenuButton {
 		background-color: inherit;
-		color: black;
-		border: 1px solid black;
+		color: lime;
+		border: 1px solid lime;
 		text-decoration: none;
 	}
-
 	#wrapper {
 		display: flex;
 		flex-direction: column;
 	}
 	#dropdownMenuClick {
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid lime;
+		border-bottom: 1px solid lime;
 		margin-top: 5px;
 		justify-content: center;
-	}
+}
 
 	.header {
 		display: none;
 	}
-
 	.hide {
 		display: none;
 	}
-
 	.flex-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	.btn {
 		justify-content: flex-end;
 		position: relative;
@@ -88,10 +90,7 @@
 		max-height: 300px;
 	}
 
-	.blog-posts {
-		font-size: 1.6rem;
-	}
-
+/*end of css standard across pages for mobile view*/
 
 	@media only screen and (min-device-width: 780px) {
 
@@ -104,6 +103,7 @@
 			width: 60%;
 			padding-left: 5%;
 			padding-right: 5%;
+			margin-top: 2%;
 		}
 		#menu {
 			display: none;
@@ -121,7 +121,6 @@
 		.title {
 			display: block;
 		}
-
 		.flex-container {
 			flex-direction: column;
 			justify-content: space-around;
@@ -132,10 +131,11 @@
 		}
 
 		nav {
-			border-right: solid black 2px;
+			border-right: solid lime 2px;
 		}
 	}
 
+	/*end of css standard across pages for desktop view*/
 
 </style>
 
@@ -202,7 +202,10 @@
 		<p>
 			About a year ago I started to realize that software development could be an actual career for me, even without a computer science degree, and started following freeCodeCamp's online curriculum.
 			Unfortunately, I have had a little trouble making steady progress since then. I have recently been looking into more structured (and less free) bootcamps that would help
-			prevent me from getting stuck in my progress. A week ago I finished Lambda School's free web development mini bootcamp, which I highly recommend. The instructor did an excellent job
+			prevent me from getting stuck in my progress.
+		</p>
+		<p>
+			A week ago I finished Lambda School's free web development mini bootcamp, which I highly recommend. The instructor did an excellent job
 			explaining a lot of JavaScript fundamentals, which helped me to really understand a few concepts that I had seen before but not quite internalized. I also watched and followed
 			along with Gordon Zhu's Watch and Code intro curriculum, which I also recommend for many of the same reasons. His examples provided the basis of the 'To-Do List' project in my portfolio.
 		</p>

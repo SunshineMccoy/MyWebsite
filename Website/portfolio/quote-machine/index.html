@@ -3,6 +3,10 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Michael McCoy's Web Development Site">
+	<meta name="keywords" content="HTML,CSS,JavaScript,blog,development">
+	<meta name="author" content="Michael McCoy">
 
 	<title>Michael's Quote Machine</title>
 
@@ -11,97 +15,70 @@
 </head>
 <style>
 
+
 	body {
 		font-family: "Courier New", Courier;
-		background-color: #C0C0C0;
+		background-color: black;
+		color: lime;
 		font-size: 62.5%;
-
-
 	}
+
 	/* I wanted to have the links look just like normal text */
 	a, a:link, a:visited, a:hover, a:active {
-		color: black;
-		text-decoration: none;
+	color: lime;
+	text-decoration: none;
 	}
 	h1 {
 		text-align: center;
-		font-size: 2rem;
-		font-weight: normal;
-	}
-	h2 {
-		text-align: center;
-		font-size: 1.6rem;
+		font-size: 2.8rem;
 		font-weight: normal;
 	}
 	h3 {
 		text-align: center;
-		font-size: 1.6rem;
+		font-size: 2.2rem;
+		font-weight: normal;
+	}
+	h2 {
+		text-align: center;
+		font-size: 2.2rem;
 		font-weight: normal;
 	}
 	p {
 		text-align: center;
-		font-size: 1rem;
-	}
-	li {
-		font-size: 1rem;
+		font-size: 1.6rem;
 	}
 	#main {
 		position: relative;
 	}
 	#dropdownMenuButton {
 		background-color: inherit;
-		color: black;
-		border: 1px solid black;
+		color: lime;
+		border: 1px solid lime;
 		text-decoration: none;
 	}
-
 	#wrapper {
 		display: flex;
 		flex-direction: column;
 	}
 	#dropdownMenuClick {
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid lime;
+		border-bottom: 1px solid lime;
 		margin-top: 5px;
 		justify-content: center;
-	}
-	#quotation {
-		font-size: 1.6rem;
-	}
-	#new-quote:hover {
-		cursor: pointer;
-	}
-
-	#twitter {
-	  color: white;
-	  margin: 10px;
-	  background-color: rgb(0, 172, 237);
-	  display: inline-block;
-	  height: 60px;
-	  font-size: 18px;
-	}
-
-	#author {
-		font-size: 2rem;
-	  margin-top: -40px;
-	  margin-bottom: 60px;
-	}
+}
 
 	.header {
 		display: none;
 	}
-
 	.hide {
 		display: none;
 	}
-
 	.flex-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	.btn {
 		justify-content: flex-end;
 		position: relative;
@@ -116,22 +93,44 @@
 		max-height: 300px;
 	}
 
-	.blog-posts {
+/*end of css standard across pages for mobile view*/
+
+	li {
 		font-size: 1rem;
 	}
 
+	#quotation {
+		font-size: 1.6rem;
+	}
+	#new-quote:hover {
+		cursor: pointer;
+	}
+	#twitter {
+		color: white;
+		margin: 10px;
+		background-color: rgb(0, 172, 237);
+		display: inline-block;
+		font-size: 18px;
+	}
+	#author {
+		font-size: 2rem;
+		margin-top: -40px;
+		margin-bottom: 60px;
+	}
+
+	.blog-posts {
+		font-size: 1rem;
+	}
 	.other-box {
-  	background-color: grey;
   	margin-left: auto;
   	margin-right: auto;
   	border-radius: 10px;
+		border: solid lime 2px;
 		position: relative;
 	}
-
 	.other-main {
 	  width: 400px;
 	}
-
 	.container {
 	  width: 150px;
 	  height: 80px;
@@ -139,11 +138,10 @@
 	  margin-right: auto;
 		display: flex;
 	}
-
 	.click-box {
 	  display: inline-block;
-		width: 60px;
-	  height: 60px;
+		width: 80px;
+	  height: 80px;
 	  margin: 10px;
 	  font-size: 18px;
 	  line-height: 30px;
@@ -164,6 +162,7 @@
 			width: 60%;
 			padding-left: 5%;
 			padding-right: 5%;
+			margin-top: 2%;
 		}
 		#menu {
 			display: none;
@@ -172,9 +171,6 @@
 			flex-direction: row;
 		}
 
-		.other-main {
-		  width: 750px;
-		}
 		.box {
 			height: 20vh;
 		}
@@ -184,7 +180,6 @@
 		.title {
 			display: block;
 		}
-
 		.flex-container {
 			flex-direction: column;
 			justify-content: space-around;
@@ -195,8 +190,12 @@
 		}
 
 		nav {
-			border-right: solid black 2px;
+			border-right: solid lime 2px;
 		}
+	}
+	/*end of css standard across pages for desktop view*/
+	.other-main {
+		width: 750px;
 	}
 
 
