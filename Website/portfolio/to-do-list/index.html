@@ -17,6 +17,8 @@
 		background-color: black;
 		color: lime;
 		font-size: 62.5%;
+		margin: 0;
+		padding: 0;
 	}
 
 	/* I wanted to have the links look just like normal text */
@@ -58,6 +60,8 @@
 	#wrapper {
 		display: flex;
 		flex-direction: column;
+		margin: 0;
+		padding: 0;
 	}
 	#dropdownMenuClick {
 		border-top: 1px solid lime;
@@ -97,7 +101,9 @@
 
 		#topBar {
 			flex-direction: column;
-			position: relative;
+			position: sticky;
+			top: 0;
+			height: 100vh;
 			width: 30%;
 		}
 		#main {
@@ -125,6 +131,7 @@
 			flex-direction: column;
 			justify-content: space-around;
 			align-items: center;
+			height: 60vh;
 		}
 		.dropdown-menu {
 			display: none;
@@ -371,6 +378,6 @@
 
 	</script>
 
-	
+
 	</body>
 	</html>
