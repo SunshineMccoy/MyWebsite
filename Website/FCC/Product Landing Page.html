@@ -106,15 +106,15 @@
 
 	@media only screen and (min-device-width: 780px) {
 
-		#topBar {
-      flex-direction: column;
+		#header {
+      flex-direction: row;
 			position: sticky;
       top: 0;
-      height: 100vh;
-			width: 30%;
+      height: 20vh;
+			width: 100%;
 		}
 		#main-doc {
-			width: 60%;
+			width: 100%;
 			padding-left: 5%;
 			padding-right: 5%;
 			margin-top: 2%;
@@ -123,13 +123,10 @@
 			display: none;
 		}
 		#wrapper {
-			flex-direction: row;
+			flex-direction: column;
 		}
-		#image {
-			width: 60%;
-			max-width: 1024px;
-			margin-left: auto;
-			margin-right: auto;
+		#header-img {
+			width: 20%;
 		}
 		#tribute-link {
 			text-decoration: underline;
@@ -148,18 +145,21 @@
 			display: block;
 		}
 		.flex-container {
-			flex-direction: column;
+			flex-direction: row;
 			justify-content: space-around;
 			align-items: center;
-      height: 60vh;
+      height: 20vh;
 		}
 		.dropdown-menu {
 			display: none;
 		}
 
 		nav {
-			border-right: solid lime 2px;
+			border-bottom: solid lime 2px;
 		}
+    main {
+      display: absolute;
+    }
 	}
 
 </style>
@@ -168,14 +168,15 @@
 
 <body>
   <div id="wrapper">
-	<div id='topBar'>
-		<div class="box"></div>
+	<header id='header'>
+
 
 		<nav id="navbar"class="flex-container">
-      <header class="title">
-        <h1> Michael McCoy's Site </h1>
-      </header>
-			<div class="header">
+
+      <div class="header">
+        <img alt="logo" src="logo.jpg" id="header-img"></img>
+      </div>
+      <div class="header">
 				<a class="nav-link" href="#section_0"><h3> Section 0</h3></a>
 			</div>
 			<div class="header">
