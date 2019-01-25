@@ -31,13 +31,11 @@
 		text-align: center;
 		font-size: 2.8rem;
 		font-weight: normal;
-		z-index: 1;
 	}
 	h3 {
 		text-align: center;
 		font-size: 2.2rem;
 		font-weight: normal;
-		z-index: 1;
 	}
 	h2 {
 		text-align: center;
@@ -108,25 +106,27 @@
 
 		#header {
       flex-direction: row;
-			position: sticky;
-      top: 0;
-      height: 20vh;
-			width: 100%;
+      height: 7.5vh;
+			max-width: 100%;
+			background-color: black;
 		}
 		#main-doc {
-			width: 100%;
+			max-width: 100%;
 			padding-left: 5%;
 			padding-right: 5%;
-			margin-top: 2%;
+			position: relative;
 		}
 		#menu {
 			display: none;
 		}
 		#wrapper {
 			flex-direction: column;
+			position: sticky;
+			top: 0;
+			z-index: 1;
 		}
 		#header-img {
-			width: 20%;
+			width: 75px;
 		}
 		#tribute-link {
 			text-decoration: underline;
@@ -148,10 +148,13 @@
 			flex-direction: row;
 			justify-content: space-around;
 			align-items: center;
-      height: 20vh;
+      height: 7.5vh;
 		}
 		.dropdown-menu {
 			display: none;
+		}
+		.main-section {
+			padding-top: 50px;
 		}
 
 		nav {
@@ -160,6 +163,11 @@
     main {
       display: absolute;
     }
+		video {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 </style>
@@ -171,7 +179,7 @@
 	<header id='header'>
 
 
-		<nav id="navbar"class="flex-container">
+		<nav id="nav-bar"class="flex-container">
 
       <div class="header">
         <img alt="logo" src="logo.jpg" id="header-img"></img>
@@ -180,10 +188,10 @@
 				<a class="nav-link" href="#section_0"><h3> Section 0</h3></a>
 			</div>
 			<div class="header">
-				<a class="nav-link" href="#section_1"><h3> Section 1 </h3></a>
+				<a class="nav-link" href="#section_1"><h3> Video </h3></a>
 			</div>
 			<div class="header">
-				<a class="nav-link" href="#section_2"><h3> Section 2 </h3></a>
+				<a class="nav-link" href="#section_2"><h3> Contact </h3></a>
 			</div>
 			<div class='header'>
 				<a class="nav-link" href="#section_3"><h3> Section 3 </h3></a>
@@ -210,13 +218,12 @@
 
 
 		</nav>
-    <div class="box"></div>
   </div>
 
   <main id="main-doc">
 
     <section class="main-section" id="section_0">
-      <header>
+      <header class="main-header">
         <h1>Section 0</h1>
 
       </header>
@@ -234,37 +241,30 @@
     </section>
 
     <section class="main-section" id="section_1">
-      <header>
-        <h1>Section 1</h1>
-
+      <header class="main-header">
+        <h1>Video</h1>
       </header>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa id dui dignissim congue. Cras mattis justo dignissim,
-        tincidunt nibh id, maximus diam. Cras quis mollis risus. Praesent sodales porttitor tristique. Nunc egestas placerat luctus.
-        Nunc sollicitudin hendrerit ex at sodales. Curabitur ullamcorper neque nec mauris hendrerit sollicitudin. In feugiat, sem eu faucibus facilisis,
-        lectus ex elementum augue, ac auctor nulla sem at ex. Donec gravida ac metus quis ornare. In aliquet finibus mauris at efficitur.
-        Vivamus vel mi a sapien ultricies interdum euismod in diam. </p>
-      <p>Nulla molestie interdum risus vel elementum. Proin ac bibendum tellus. Donec sit amet sem id augue finibus ultricies ac et justo.
-        Suspendisse venenatis tortor id ornare ullamcorper. In non commodo neque, sit amet vehicula eros. Etiam cursus augue ut scelerisque commodo.
-        Cras rhoncus massa consectetur urna mollis posuere. Nam consectetur justo sed hendrerit accumsan. Sed elit mauris, sollicitudin quis dolor id,
-        vulputate rutrum elit. Curabitur nec dignissim sapien, in pulvinar felis. Vestibulum eros ante, interdum sed erat in, posuere dictum nisi.
-        Cras non nunc vel metus iaculis luctus. Praesent tincidunt metus velit, a tempor justo venenatis id. Ut vel porta tellus. Donec placerat sit amet odio in lacinia.
-        Vivamus suscipit purus eget libero tempus, eget aliquet elit rutrum. </p>
-      <code>   </code>
+			<video id="video" width="400" controls>
+				<source src="cat_video.mp4" type="video/mp4">
+				</source>
+			</video>
     </section>
 
     <section class="main-section" id="section_2">
-      <header>
-        <h1>Section 2</h1>
+      <header class="main-header">
+        <h1>Contact</h1>
 
       </header>
-      <p>Phasellus a suscipit nunc, id lobortis ligula. Donec ac tortor vel turpis sodales pulvinar. Ut tristique pharetra dui, eu vestibulum nisi ultricies eu. Phasellus ut finibus odio. Vivamus arcu lorem, vehicula non sapien in, facilisis volutpat arcu. Sed leo ante, maximus in libero quis, bibendum eleifend nisl. Sed et libero at nisi tincidunt mollis quis ut arcu. Aliquam erat volutpat. Praesent augue odio, laoreet id iaculis at, placerat et lectus. Nam sit amet fermentum ex, eget vestibulum libero. Maecenas et elit dolor. Phasellus in dui accumsan dolor porta faucibus sed vel dui. Pellentesque gravida turpis et augue efficitur, in dapibus nulla faucibus. Maecenas a porta metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-      <p>Vestibulum id tincidunt tellus, et volutpat metus. Cras pharetra sapien vitae convallis maximus. Donec dignissim sem id risus fermentum, in commodo massa pulvinar. Nullam vel ex at tellus tempor finibus sed id leo. Praesent arcu lorem, sagittis non faucibus id, scelerisque vitae quam. Fusce nisi libero, euismod ut orci sed, sagittis euismod enim. Donec scelerisque justo non erat scelerisque convallis. Curabitur placerat vitae felis a tristique. Nullam iaculis gravida augue, vel dictum tortor volutpat vitae. Donec gravida porttitor quam ut aliquam. Fusce a convallis tellus, vitae ultrices augue. Maecenas in arcu eleifend, porttitor arcu sit amet, commodo nisl. </p>
-      <code>   </code>
+      <p> Please enter your email below! </p>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<input id="email" type="email" placeholder="email address" name="email">
+				<input id="submit" type="submit">
+			</form>
     </section>
 
     <section class="main-section" id="section_3">
-      <header>
+      <header class="main-header">
         <h1>Section 3</h1>
 
       </header>
@@ -274,7 +274,7 @@
     </section>
 
     <section class="main-section" id="section_4">
-      <header>
+      <header class="main-header">
         <h1>Section 4</h1>
 
       </header>
